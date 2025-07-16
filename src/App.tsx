@@ -95,9 +95,9 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+      <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -106,10 +106,10 @@ function App() {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#home" className="text-gray-700 hover:text-primary transition-colors">Home</a>
-              <a href="#products" className="text-gray-700 hover:text-primary transition-colors">Products</a>
-              <a href="#about" className="text-gray-700 hover:text-primary transition-colors">About</a>
-              <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
+              <a href="#home" className="text-muted-foreground hover:text-primary transition-colors">Home</a>
+              <a href="#products" className="text-muted-foreground hover:text-primary transition-colors">Products</a>
+              <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">About</a>
+              <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</a>
               <Button variant="outline" size="sm">
                 <ShoppingBag className="w-4 h-4 mr-2" />
                 Cart (0)
@@ -130,12 +130,12 @@ function App() {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <div className="md:hidden py-4 border-t border-gray-100">
+            <div className="md:hidden py-4 border-t border-border">
               <div className="flex flex-col space-y-4">
-                <a href="#home" className="text-gray-700 hover:text-primary transition-colors">Home</a>
-                <a href="#products" className="text-gray-700 hover:text-primary transition-colors">Products</a>
-                <a href="#about" className="text-gray-700 hover:text-primary transition-colors">About</a>
-                <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                <a href="#home" className="text-muted-foreground hover:text-primary transition-colors">Home</a>
+                <a href="#products" className="text-muted-foreground hover:text-primary transition-colors">Products</a>
+                <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">About</a>
+                <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</a>
                 <Button variant="outline" size="sm" className="w-fit">
                   <ShoppingBag className="w-4 h-4 mr-2" />
                   Cart (0)
@@ -147,7 +147,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative bg-gradient-to-br from-gray-50 to-white py-20 lg:py-32">
+      <section id="home" className="relative bg-gradient-to-br from-muted/50 to-background py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -157,7 +157,7 @@ function App() {
                   Step Into Your
                   <span className="text-accent"> Best Life</span>
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-muted-foreground leading-relaxed">
                   Discover premium footwear that combines style, comfort, and performance. 
                   From casual walks to intense workouts, we've got your every step covered.
                 </p>
@@ -176,15 +176,15 @@ function App() {
               <div className="flex items-center space-x-8 pt-4">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary">50K+</div>
-                  <div className="text-sm text-gray-600">Happy Customers</div>
+                  <div className="text-sm text-muted-foreground">Happy Customers</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary">4.9</div>
-                  <div className="text-sm text-gray-600">Average Rating</div>
+                  <div className="text-sm text-muted-foreground">Average Rating</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary">200+</div>
-                  <div className="text-sm text-gray-600">Shoe Models</div>
+                  <div className="text-sm text-muted-foreground">Shoe Models</div>
                 </div>
               </div>
             </div>
@@ -204,7 +204,7 @@ function App() {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center space-y-4">
@@ -212,7 +212,7 @@ function App() {
                 <Truck className="w-8 h-8 text-accent" />
               </div>
               <h3 className="text-xl font-semibold text-primary">Free Shipping</h3>
-              <p className="text-gray-600">Free shipping on orders over $100. Fast and reliable delivery worldwide.</p>
+              <p className="text-muted-foreground">Free shipping on orders over $100. Fast and reliable delivery worldwide.</p>
             </div>
             
             <div className="text-center space-y-4">
@@ -220,7 +220,7 @@ function App() {
                 <Shield className="w-8 h-8 text-accent" />
               </div>
               <h3 className="text-xl font-semibold text-primary">Quality Guarantee</h3>
-              <p className="text-gray-600">Premium materials and craftsmanship. 2-year warranty on all products.</p>
+              <p className="text-muted-foreground">Premium materials and craftsmanship. 2-year warranty on all products.</p>
             </div>
             
             <div className="text-center space-y-4">
@@ -228,7 +228,7 @@ function App() {
                 <RotateCcw className="w-8 h-8 text-accent" />
               </div>
               <h3 className="text-xl font-semibold text-primary">Easy Returns</h3>
-              <p className="text-gray-600">30-day return policy. No questions asked, hassle-free returns.</p>
+              <p className="text-muted-foreground">30-day return policy. No questions asked, hassle-free returns.</p>
             </div>
           </div>
         </div>
@@ -239,7 +239,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-primary">Featured Products</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Discover our most popular shoes, loved by thousands of customers worldwide.
             </p>
           </div>
@@ -284,12 +284,12 @@ function App() {
                             />
                           ))}
                         </div>
-                        <span className="text-sm text-gray-600">({product.reviews})</span>
+                        <span className="text-sm text-muted-foreground">({product.reviews})</span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <span className="text-2xl font-bold text-primary">${product.price}</span>
                         {product.originalPrice && (
-                          <span className="text-lg text-gray-500 line-through">${product.originalPrice}</span>
+                          <span className="text-lg text-muted-foreground line-through">${product.originalPrice}</span>
                         )}
                       </div>
                     </div>
@@ -313,19 +313,19 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gray-50">
+      <section id="about" className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold text-primary">
                 Crafting Excellence Since 1995
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 At StepForward, we believe that great shoes are more than just footwear – they're 
                 the foundation of confidence, comfort, and style. For over 25 years, we've been 
                 dedicated to creating premium shoes that empower people to step forward with purpose.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Our commitment to quality craftsmanship, sustainable materials, and innovative 
                 design has made us a trusted choice for customers worldwide. Every pair tells 
                 a story of passion, precision, and the pursuit of perfection.
@@ -351,7 +351,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-primary">What Our Customers Say</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Don't just take our word for it. Here's what our satisfied customers have to say.
             </p>
           </div>
@@ -365,7 +365,7 @@ function App() {
                       <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-gray-600 italic leading-relaxed">
+                  <p className="text-muted-foreground italic leading-relaxed">
                     "{testimonial.comment}"
                   </p>
                   <div className="flex items-center justify-center space-x-4">
@@ -386,11 +386,11 @@ function App() {
       </section>
 
       {/* Newsletter */}
-      <section className="py-20 bg-primary text-white">
+      <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
             <h2 className="text-3xl lg:text-4xl font-bold">Stay in the Loop</h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-primary-foreground/70 max-w-2xl mx-auto">
               Be the first to know about new arrivals, exclusive offers, and style tips. 
               Join our newsletter and step into the future of footwear.
             </p>
@@ -403,9 +403,9 @@ function App() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="bg-white text-primary"
+                  className="bg-background text-foreground"
                 />
-                <Button type="submit" className="bg-accent hover:bg-accent/90 text-white">
+                <Button type="submit" className="bg-accent hover:bg-accent/90 text-accent-foreground">
                   Subscribe
                 </Button>
               </div>
@@ -415,22 +415,22 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer id="contact" className="bg-gray-900 text-white py-16">
+      <footer id="contact" className="bg-secondary text-secondary-foreground py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold">StepForward</h3>
-              <p className="text-gray-400">
+              <p className="text-muted-foreground">
                 Premium footwear for every step of your journey. Quality, comfort, and style in every pair.
               </p>
               <div className="flex space-x-4">
-                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-secondary-foreground">
                   <Facebook className="w-5 h-5" />
                 </Button>
-                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-secondary-foreground">
                   <Instagram className="w-5 h-5" />
                 </Button>
-                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-secondary-foreground">
                   <Twitter className="w-5 h-5" />
                 </Button>
               </div>
@@ -439,26 +439,26 @@ function App() {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Quick Links</h4>
               <div className="space-y-2">
-                <a href="#home" className="block text-gray-400 hover:text-white transition-colors">Home</a>
-                <a href="#products" className="block text-gray-400 hover:text-white transition-colors">Products</a>
-                <a href="#about" className="block text-gray-400 hover:text-white transition-colors">About</a>
-                <a href="#contact" className="block text-gray-400 hover:text-white transition-colors">Contact</a>
+                <a href="#home" className="block text-muted-foreground hover:text-secondary-foreground transition-colors">Home</a>
+                <a href="#products" className="block text-muted-foreground hover:text-secondary-foreground transition-colors">Products</a>
+                <a href="#about" className="block text-muted-foreground hover:text-secondary-foreground transition-colors">About</a>
+                <a href="#contact" className="block text-muted-foreground hover:text-secondary-foreground transition-colors">Contact</a>
               </div>
             </div>
             
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Customer Service</h4>
               <div className="space-y-2">
-                <a href="#" className="block text-gray-400 hover:text-white transition-colors">Size Guide</a>
-                <a href="#" className="block text-gray-400 hover:text-white transition-colors">Shipping Info</a>
-                <a href="#" className="block text-gray-400 hover:text-white transition-colors">Returns</a>
-                <a href="#" className="block text-gray-400 hover:text-white transition-colors">FAQ</a>
+                <a href="#" className="block text-muted-foreground hover:text-secondary-foreground transition-colors">Size Guide</a>
+                <a href="#" className="block text-muted-foreground hover:text-secondary-foreground transition-colors">Shipping Info</a>
+                <a href="#" className="block text-muted-foreground hover:text-secondary-foreground transition-colors">Returns</a>
+                <a href="#" className="block text-muted-foreground hover:text-secondary-foreground transition-colors">FAQ</a>
               </div>
             </div>
             
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Contact Info</h4>
-              <div className="space-y-2 text-gray-400">
+              <div className="space-y-2 text-muted-foreground">
                 <p>123 Fashion Street</p>
                 <p>New York, NY 10001</p>
                 <p>Phone: (555) 123-4567</p>
@@ -467,7 +467,7 @@ function App() {
             </div>
           </div>
           
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
             <p>&copy; 2024 StepForward. All rights reserved.</p>
           </div>
         </div>
